@@ -6,13 +6,13 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
-            <head>
+    <html>
+        <head>
             <title>Page Generator 2</title>            
-            </head>
+        </head>
             
             <body>
-                <table style=width:100% >
+                <table border="1" style=width:100% >
                     <tr>
                         <th>
                             First Names
@@ -53,5 +53,6 @@
                 
             <h5>.jsp Format</h5>
             
-            </body>
-            </html>
+        </body>
+        
+    </html>
