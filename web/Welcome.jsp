@@ -14,7 +14,7 @@
     </head>
     <body>
         <h1>Hello Demo</h1>
-        <form method="POST" action="HelloController">
+        <form method="POST" action="WelcomeController">
         <label>Enter Name</label>
         <input type="text" name="name" value=""/>
         <input type="submit" name="submit" value="Say Hello"/>
