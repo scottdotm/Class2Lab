@@ -12,7 +12,7 @@
         </head>
             
             <body>
-                <table border="1" style=width:100% >
+                <table border="1" style="width:100%">
                     <tr>
                         <th>
                             First Names

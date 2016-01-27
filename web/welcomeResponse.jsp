@@ -9,10 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Response Page</title>
+        <title>JSP Response Page for Hello App.</title>
     </head>
     <body>
-        <h1>Server Response</h1>
         <p>
             <%
                 Object responseObj = request.getAttribute("myMsg");
@@ -26,5 +25,6 @@
                 }
                 %>
         </p>
+        <h5>Server Response</h5>
     </body>
 </html>

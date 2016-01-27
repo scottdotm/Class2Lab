@@ -16,7 +16,7 @@
         <h1>Hello Demo</h1>
         <form method="POST" action="HelloController">
         <label>Enter Name</label>
-        <input type="text" name="username" value=""/>
+        <input type="text" name="name" value=""/>
         <input type="submit" name="submit" value="Say Hello"/>
         </form>
         

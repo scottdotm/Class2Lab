@@ -13,14 +13,14 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.HelloService;
+import model.WelcomeService;
 
 /**
  *
  * @author Scott
  */
 @WebServlet(name = "HelloController", urlPatterns = {"/HelloController"})
-public class HelloController extends HttpServlet {
+public class WelcomeController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,18 +35,18 @@ public class HelloController extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String name = request.getParameter("username");
+            String name = request.getParameter("name");
             
             
-            HelloService helloSrv = new HelloService();
-            String responseMsg = helloSrv.sayHello(name);
+            WelcomeService welcomeSrv = new WelcomeService();
+            String responseMsg = welcomeSrv.sayWelcome(name);
             
 //            String responseMsg = "Hello " +name + 
 //                    " , isn't Java great!";
             request.setAttribute("myMsg", responseMsg);
             
             RequestDispatcher view = 
-                    request.getRequestDispatcher("/helloResponse.jsp");
+                    request.getRequestDispatcher("/welcomeResponse.jsp");
             view.forward(request, response);
         }
         catch(Exception e){
