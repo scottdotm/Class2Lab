@@ -66,7 +66,7 @@ private String greeting;
         
  public String sayHello(String name){
      getGreeting();
-     return "Hello " + name + " good " + greeting + " the current time is  " + LocalTime.now().getHour() + ":" + LocalTime.now().getMinute();
+     return "Hello " + name + "! Good " + greeting + ", the current time is  " + LocalTime.now().getHour() + ":" + LocalTime.now().getMinute();
    
  } 
 }
