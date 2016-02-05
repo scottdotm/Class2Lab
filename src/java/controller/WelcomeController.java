@@ -36,17 +36,12 @@ public class WelcomeController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             String name = request.getParameter("name");
-            
-            
             WelcomeService welcomeSrv = new WelcomeService();
             String responseMsg = welcomeSrv.sayWelcome(name);
-            
-//            String responseMsg = "Hello " +name + 
-//                    " , isn't Java great!";
             request.setAttribute("myMsg", responseMsg);
             
             RequestDispatcher view = 
-                    request.getRequestDispatcher("/welcomeResponse.jsp");
+            request.getRequestDispatcher("/welcomeResponse.jsp");
             view.forward(request, response);
         }
         catch(Exception e){
